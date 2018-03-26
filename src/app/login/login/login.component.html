@@ -1,0 +1,26 @@
+<div class="form-container">
+  <h1 class="logo">LOGO</h1>
+  <mat-form-field>
+    <input matInput placeholder="Email">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Password" type="password">
+  </mat-form-field>
+  <mat-slide-toggle class="remember-me-slider">Remember me</mat-slide-toggle>
+  <button mat-raised-button color="basic" class="login-button" (click)="signIn()">
+    <mat-grid-list cols="3" rowHeight="35px">
+      <mat-grid-tile *ngIf="signInLoading === false">
+        <mat-icon>input</mat-icon>
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="signInLoading" >
+        <mat-progress-spinner mode="indeterminate" [diameter]="20"></mat-progress-spinner>
+      </mat-grid-tile>
+      <mat-grid-tile style="float:none" [colspan]="2"><div class="login-text">Login</div></mat-grid-tile>
+    </mat-grid-list>
+  </button>
+  <div class="login-links">
+    <a class="login-links" href="">Need to sign up</a>
+    <a>|</a>
+    <a class="login-links" href="">Forgot your password?</a>
+  </div>
+</div>

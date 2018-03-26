@@ -1,0 +1,50 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: auto;
+}
+
+.form-container > * {
+  width: 100%;
+}
+
+.logo {
+  font-family: arial;
+  letter-spacing: -11px;
+  font-size: 80px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: #555555;
+  margin-top: 70px;
+  margin-bottom: 20px
+}
+
+.remember-me-slider{
+  color: #6F6F6F;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.login-button{
+  color: #555555;
+  max-width: 200px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.login-text{
+  position: absolute;
+  left: 5px;
+}
+
+.login-links{
+  margin-top: 25px;
+  color: #6F6F6F;
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
