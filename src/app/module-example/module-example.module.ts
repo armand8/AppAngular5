@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModuleRouting } from './module-example-routing.module';
-import { MaterialModule } from '../material/material.module';
+import { MaterialModule } from '../_material/material.module';
 import { ComponentExampleComponent } from './component-example/component-example.component';
 
 @NgModule({
