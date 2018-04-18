@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-
-import {User} from '../../_models/index';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from '../../_services/user.service';
+import { User } from '../../_models/index';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,11 +13,17 @@ export class HomeComponent implements OnInit {
 
     currentUser: User;
 
-    constructor() {
+    constructor(private userService: UserService,
+                private router: Router) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
 
     ngOnInit() {
+    }
+
+    logout() {
+        this.userService.logout();
+        this.router.navigate(['/login']);
     }
 
 }

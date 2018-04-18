@@ -7,7 +7,7 @@ import 'rxjs/add/operator/delay';
 import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/materialize';
 import 'rxjs/add/operator/dematerialize';
-import {users} from './fake_database';
+import { users } from './fake_database';
 
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
